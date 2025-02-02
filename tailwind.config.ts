@@ -21,6 +21,15 @@ export default {
       lg: "1200px",
       xl: "1536px",
     },
+    fontFamily:{
+      ralewayBlack:["ralewayBlack"],
+      ralewayExtraBold:["ralewayExtraBold"],
+      ralewayExtraLight:["ralewayExtraLight"],
+      ralewayLight:["ralewayLight"],
+      ralewayMedium:["ralewayMedium"],
+      ralewayRegular:["ralewayRegular"],
+      ralewaySemiBold:["ralewaySemiBold"],
+    }
   },
   plugins: [],
 } satisfies Config;
