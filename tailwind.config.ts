@@ -29,6 +29,7 @@ export default {
       ralewayMedium:["ralewayMedium"],
       ralewayRegular:["ralewayRegular"],
       ralewaySemiBold:["ralewaySemiBold"],
+      ralewayBold:["ralewayBold"],
     }
   },
   plugins: [],
