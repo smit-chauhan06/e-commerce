@@ -9,8 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-       blackColor:"#000",
-       lightGrey:"#F5F5F5"
+        blackColor: "#000",
+        lightGrey: "#F5F5F5",
+      },
+      fontFamily: {
+        raleway : ["var(--font-raleway)"]
       },
     },
     screens: {
@@ -21,16 +24,6 @@ export default {
       lg: "1200px",
       xl: "1536px",
     },
-    fontFamily:{
-      ralewayBlack:["ralewayBlack"],
-      ralewayExtraBold:["ralewayExtraBold"],
-      ralewayExtraLight:["ralewayExtraLight"],
-      ralewayLight:["ralewayLight"],
-      ralewayMedium:["ralewayMedium"],
-      ralewayRegular:["ralewayRegular"],
-      ralewaySemiBold:["ralewaySemiBold"],
-      ralewayBold:["ralewayBold"],
-    }
   },
   plugins: [],
 } satisfies Config;
