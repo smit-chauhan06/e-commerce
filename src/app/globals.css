@@ -53,5 +53,6 @@
 
 /* Apply default font to body */
 body {
-  /* font-family: "ralewayBold", sans-serif; */
+  font-family: "raleway";
+  font-weight: lighter;
 }

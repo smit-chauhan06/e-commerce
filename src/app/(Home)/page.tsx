@@ -11,11 +11,7 @@ const Home = () => {
   //   dispatch(setAccessToken("smit"));
   //   console.log("hello");
   // }, []);
-  return (
-    <div>
-      <CHeader />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Home;

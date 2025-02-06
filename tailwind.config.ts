@@ -11,6 +11,7 @@ export default {
       colors: {
         blackColor: "#000",
         lightGrey: "#F5F5F5",
+        whiteColor:"#ffff"
       },
       fontFamily: {
         raleway : ["var(--font-raleway)"]

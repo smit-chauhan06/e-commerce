@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ReduxProvider from "./store/reduxProvider";
 import localFont from "next/font/local";
+import CHeader from "./components/CHeader";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -56,8 +57,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${raleway.variable}`}>
         <ReduxProvider>
-          {children}
-          <p className="font-raleway">Hello w</p>
+          <CHeader />
+          <main>{children}</main>
         </ReduxProvider>
       </body>
     </html>
