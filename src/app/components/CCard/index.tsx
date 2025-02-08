@@ -12,7 +12,7 @@ interface propTypes {
     rating: number;
     noRating: number;
     discount: number;
-    isAddedToCart: false;
+    isAddedToCart: boolean;
     image: string;
   };
 }

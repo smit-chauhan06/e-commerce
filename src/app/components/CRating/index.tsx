@@ -23,6 +23,7 @@ const CRating = (props: propTypes) => {
       {Array.from({ length: totalStar }, (_, i) => {
         return (
           <Image
+            key={i}
             src={i < rating ? Images.fillStar : Images.star}
             width={20}
             height={20}
