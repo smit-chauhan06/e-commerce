@@ -86,9 +86,9 @@ const CHeader = () => {
           />
 
           <ul className="mt-20 space-y-4 text-md">
-            {DrawerItems.map((data) => (
+            {DrawerItems.map((data, index) => (
               <li
-                id={data.id}
+                key={data.id}
                 className="cursor-pointer font-raleway"
                 onClick={() => setDrawerOpen(false)}
               >

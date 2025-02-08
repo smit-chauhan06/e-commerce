@@ -11,7 +11,9 @@ export default {
       colors: {
         blackColor: "#000",
         lightGrey: "#F5F5F5",
-        whiteColor:"#ffff"
+        whiteColor:"#ffff",
+        cardPriceColor:'#DB4444',
+        greyText:"#7D8184"
       },
       fontFamily: {
         raleway : ["var(--font-raleway)"]
