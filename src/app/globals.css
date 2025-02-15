@@ -57,3 +57,11 @@ body {
   font-weight: lighter;
   overflow-x: hidden;
 }
+
+.root-div {
+  @apply w-[100vw];
+}
+
+.content-div {
+  @apply w-[90vw] max-w-[1600px];
+}

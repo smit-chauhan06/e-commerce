@@ -19,16 +19,16 @@ const Home = () => {
   return (
     <>
       <section className="flex justify-center items-center flex-col pt-5">
-        <div className="w-[90vw]">
+        <div className="content-div">
           <CSectionHeader title="Today's Deals" />
         </div>
-        {/* <div className="mb-[20px] w-[90vw] flex gap-5 items-center">
+        {/* <div className="mb-[20px] content-div flex gap-5 items-center">
           <span className="text-[24px] font-raleway font-[900]">
             Flash Sales
           </span>
           <CTimer leftDays={1} />
         </div> */}
-        <div className="w-[90vw] grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div className="content-div grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {ProductDetails.map((data) => (
             <CCard key={data?.id} productsData={data} />
           ))}
@@ -38,10 +38,10 @@ const Home = () => {
         </div>
       </section>
       <section className="flex justify-center items-center flex-col pt-5">
-        <div className="w-[90vw]">
+        <div className="content-div">
           <CSectionHeader title="This Month" />
         </div>
-        <div className="mb-[30px] w-[90vw] flex gap-5 items-center justify-between">
+        <div className="mb-[30px] content-div flex gap-5 items-center justify-between">
           <span className="xxs:text-[20px] text-[24px] font-raleway font-[900]">
             Best Selling Products
           </span>
@@ -50,12 +50,12 @@ const Home = () => {
             className="w-[150px] xxs:hidden sm:block"
           />
         </div>
-        <div className="w-[90vw] grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div className="content-div grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {MonthlySellProducts.map((data) => (
             <CCard key={data?.id} productsData={data} />
           ))}
         </div>
-        <div className="w-[90vw] mt-[10px]">
+        <div className="content-div mt-[10px]">
           <CButton title={"View All"} className="sm:hidden" />
         </div>
       </section>
