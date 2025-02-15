@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .icon-style {
-  @apply text-blackColor text-[25px];
+  @apply text-blackColor  text-[22px] md:text-[25px];
 }
