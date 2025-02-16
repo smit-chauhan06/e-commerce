@@ -21,8 +21,8 @@ const CHeader = () => {
   }, []);
 
   return (
-    <div className="root-div flex justify-center items-center flex-col  sticky top-0 z-10 bg-whiteColor sm:shadow-md">
-      <div className="w-[100vw] flex justify-center flex-col items-center">
+    <div className="root-div flex justify-center items-center flex-col  sticky top-0 right-0 z-10 bg-whiteColor sm:shadow-md">
+      <div className="w-[100%] flex justify-center flex-col items-center">
         <div className="bg-blackColor flex justify-center items-center w-[100%] pt-2 pb-2 pl-5 pr-5">
           <span className="text-whiteColor font-raleway xxs:text-[12px] md:text-[16px] text-center">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!

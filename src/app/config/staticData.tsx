@@ -116,3 +116,36 @@ export const MonthlySellProducts = [
     image: Images.table,
   },
 ];
+
+export const categoryData = [
+  {
+    id: 1,
+    name: "Mobiles",
+    image: Images.mobilesCategory,
+  },
+  {
+    id: 2,
+    name: "Fashion",
+    image: Images.fashionCategory,
+  },
+  {
+    id: 3,
+    name: "Electronics",
+    image: Images.electronicsCategory,
+  },
+  {
+    id: 4,
+    name: "Home & Furniture",
+    image: Images.homeAndFurniture,
+  },
+  {
+    id: 5,
+    name: "Beauty Products",
+    image: Images.beautyCategory,
+  },
+  {
+    id: 6,
+    name: "Toys & More",
+    image: Images.babyCategory,
+  },
+];
