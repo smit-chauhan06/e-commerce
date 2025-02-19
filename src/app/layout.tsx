@@ -61,7 +61,7 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </head>
-      <body className={`${raleway.variable} overflow-x-hidden`}>
+      <body className={`${raleway.variable}`}>
         <ReduxProvider>
           <CHeader />
           <main>{children}</main>

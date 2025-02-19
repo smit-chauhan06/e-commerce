@@ -16,4 +16,7 @@ export const Images = {
   beautyCategory: "/Images/beautyCategory.png",
   babyCategory: "/Images/babyCategory.png",
   clothesOfferSlider: "/Images/clothesOffersSlider.jpeg",
+  slider1: "/Images/slider1.png",
+  slider2: "/Images/slider2.png",
+  slider3: "/Images/slider3.png",
 };

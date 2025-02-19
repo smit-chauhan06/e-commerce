@@ -27,32 +27,51 @@ const Home = () => {
   // }, []);
   return (
     <>
-      <section className="flex justify-center items-center sm:mt-[20px]">
+      <section className="flex justify-center items-center">
+        <div className="root-div">
+          <Carousel
+            showThumbs={false}
+            autoPlay={true}
+            infiniteLoop={true}
+            interval={3000}
+            showArrows={false}
+            showStatus={false}
+          >
+            <div className="bg-bgGrey flex flex-col sm:flex-row justify-between w-[100%] items-center">
+              <div className="">
+                <img
+                  src={Images.slider1}
+                  alt="product"
+                  className="w-[100%] min-h-[200px] sm:min-h-[400px]"
+                />
+              </div>
+            </div>
+            <div className="bg-bgGrey flex flex-col sm:flex-row justify-between w-[100%] items-center">
+              <div className="">
+                <img
+                  src={Images.slider2}
+                  alt="product"
+                  className="w-[100%] min-h-[200px] sm:min-h-[400px]"
+                />
+              </div>
+            </div>
+            <div className="bg-bgGrey flex flex-col sm:flex-row justify-between w-[100%] items-center">
+              <div className="">
+                <img
+                  src={Images.slider3}
+                  alt="product"
+                  className="w-[100%] min-h-[200px] sm:min-h-[400px]"
+                />
+              </div>
+            </div>
+          </Carousel>
+        </div>
+      </section>
+      <section className="flex justify-center items-center mt-[20px] sm:mt-[40px]">
         <div className="content-div">
           <CategoryBar categoryData={categoryData} />
         </div>
       </section>
-      {/* <section className="flex justify-center items-center sm:mt-[20px]">
-        <div className="content-div">
-          <Carousel showThumbs={false}>
-            <div className="max-h-[300px]">
-              <Image
-                src={Images.clothesOfferSlider}
-                alt="product"
-                width={100}
-                height={100}
-                className="object-cover w-[100%] h-[200px]"
-              />
-            </div>
-            <div className="max-h-[300px]">
-              <img
-                className="w-[100%] h-[200px]"
-                src={Images.clothesOfferSlider}
-              />
-            </div>
-          </Carousel>
-        </div>
-      </section> */}
 
       <section className="flex justify-center items-center flex-col pt-5">
         <div className="content-div">
