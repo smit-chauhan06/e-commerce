@@ -7,7 +7,9 @@ import CHeader from "../components/CHeader/index";
 import CSectionHeader from "../components/CSectionHeader";
 import CTimer from "../components/CTimer";
 import {
+  BestElectronics,
   categoryData,
+  FashionDeals,
   MonthlySellProducts,
   ProductDetails,
 } from "../config/staticData";
@@ -17,6 +19,7 @@ import { Carousel } from "react-responsive-carousel";
 import { setAccessToken } from "../store/authSlice";
 import { Images } from "../config/Files";
 import Image from "next/image";
+import DealCard from "../components/DealCard";
 
 const Home = () => {
   // const dispatch = useAppDispatch();
@@ -64,6 +67,15 @@ const Home = () => {
                 />
               </div>
             </div>
+            <div className="bg-bgGrey flex flex-col sm:flex-row justify-between w-[100%] items-center">
+              <div className="">
+                <img
+                  src={Images.slider4}
+                  alt="product"
+                  className="w-[100%] min-h-[200px] sm:min-h-[400px]"
+                />
+              </div>
+            </div>
           </Carousel>
         </div>
       </section>
@@ -73,40 +85,32 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="flex justify-center items-center flex-col pt-5">
+      <section className="flex justify-center items-center flex-col pt-[10px]">
         <div className="content-div">
-          <CSectionHeader title="Today's Deals" />
+          <CSectionHeader title="Best of Electronics" />
         </div>
-
-        <div className="content-div grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-          {ProductDetails.map((data) => (
-            <CCard key={data?.id} productsData={data} />
-          ))}
-        </div>
-        <div className="mt-[30px]">
-          <CButton title="View All Products" className="w-[250px]" />
+        <div className="content-div">
+          <div className="overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <div className="flex space-x-6">
+              {BestElectronics.map((item, index) => (
+                <DealCard key={item.id} productsData={item} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
-      <section className="flex justify-center items-center flex-col pt-5">
+      <section className="flex justify-center items-center flex-col pt-[10px]">
         <div className="content-div">
-          <CSectionHeader title="This Month" />
+          <CSectionHeader title="Fashion Top Deals" />
         </div>
-        <div className="mb-[30px] content-div flex gap-5 items-center justify-between">
-          <span className="xxs:text-[20px] text-[24px] font-raleway font-[900]">
-            Best Selling Products
-          </span>
-          <CButton
-            title={"View All"}
-            className="w-[150px] xxs:hidden sm:block"
-          />
-        </div>
-        <div className="content-div grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-          {MonthlySellProducts.map((data) => (
-            <CCard key={data?.id} productsData={data} />
-          ))}
-        </div>
-        <div className="content-div mt-[10px]">
-          <CButton title={"View All"} className="sm:hidden" />
+        <div className="content-div">
+          <div className="overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <div className="flex space-x-6">
+              {FashionDeals.map((item, index) => (
+                <DealCard key={item.id} productsData={item} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </>

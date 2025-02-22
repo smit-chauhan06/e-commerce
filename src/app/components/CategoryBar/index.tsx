@@ -15,13 +15,13 @@ interface CategoryProps {
 const CategoryBar = (props: CategoryProps) => {
   const { categoryData } = props;
   return (
-    <div className="w-[100%]  flex justify-between overflow-x-auto items-center gap-[20px]">
+    <div className="w-[100%]  flex justify-between overflow-x-auto items-center gap-[20px] scrollbar-hide">
       {categoryData?.map((data, index) => (
         <div
           key={data?.id}
           className="flex justify-center items-center pb-[10px]  flex-col min-w-[100px] cursor-pointer"
         >
-          <div className="w-[100px] h-[70px] ">
+          <div className="w-[100px] h-[70px] transform transition duration-300 hover:scale-110">
             <Image
               src={data?.image}
               alt="product"

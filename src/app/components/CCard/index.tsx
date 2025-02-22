@@ -15,10 +15,18 @@ interface propTypes {
     isAddedToCart: boolean;
     image: string;
   };
+  isShowFavorite: boolean;
+  isShowCart: boolean;
+  showRating: boolean;
 }
 
 const CCard = (props: propTypes) => {
-  const { productsData } = props;
+  const {
+    productsData,
+    isShowFavorite = true,
+    isShowCart = true,
+    showRating = true,
+  } = props;
 
   return (
     <div className="min-w-[250px]">
@@ -31,12 +39,18 @@ const CCard = (props: propTypes) => {
           <span className="text-whiteColor mt-[2px]">%</span>
         </div>
         <div className="absolute right-[10px] top-[10px] ">
-          <div className="bg-whiteColor   p-2 text-[12px] flex justify-center items-center rounded-[50%]">
-            <GrFavorite className="text-blackColor text-[22px]" />
-          </div>
-          <div className="bg-whiteColor p-2 text-[12px] flex justify-center items-center rounded-[50%] mt-3">
-            <GrCart className="text-blackColor text-[20px]" />
-          </div>
+          {isShowFavorite && (
+            <div className="bg-whiteColor   p-2 text-[12px] flex justify-center items-center rounded-[50%]">
+              <GrFavorite className="text-blackColor text-[22px]" />
+            </div>
+          )}
+          {isShowCart && (
+            <div
+              className={`bg-whiteColor p-2 text-[12px] flex justify-center items-center rounded-[50%]  mt-3`}
+            >
+              <GrCart className="text-blackColor text-[20px]" />
+            </div>
+          )}
         </div>
         <Image
           src={productsData?.image}
@@ -58,13 +72,15 @@ const CCard = (props: propTypes) => {
             ${productsData?.oldPrice}
           </p>
         </div>
-        <div className="pb-3 mt-1">
-          <CRating
-            totalStar={5}
-            rating={productsData?.rating}
-            ratedCount={productsData?.noRating}
-          />
-        </div>
+        {showRating && (
+          <div className="pb-3 mt-1">
+            <CRating
+              totalStar={5}
+              rating={productsData?.rating}
+              ratedCount={productsData?.noRating}
+            />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -149,3 +149,67 @@ export const categoryData = [
     image: Images.babyCategory,
   },
 ];
+
+export const BestElectronics = [
+  {
+    id: 1,
+    name: "Smart Watches",
+    price: "From ₹500",
+    image: Images.smartWatch,
+  },
+  { id: 2, name: "Printers", price: "Up to 40% Off", image: Images.printer },
+
+  {
+    id: 3,
+    name: "Earbuds",
+    price: "Starting from ₹300",
+    image: Images.earbuds,
+  },
+  {
+    id: 4,
+    name: "Keyboards",
+    price: "Up to 60% Off",
+    image: Images.keyboardBest,
+  },
+  { id: 5, name: "Trimmers", price: "Min 20% Off", image: Images.trimmer },
+  {
+    id: 6,
+    name: "Monitors",
+    price: "Starting from ₹1000",
+    image: Images.monitor,
+  },
+];
+
+export const FashionDeals = [
+  {
+    id: 1,
+    name: "Women Dresses",
+    price: "50-80% off",
+    image: Images.womanDress,
+  },
+  {
+    id: 2,
+    name: "Women's Shirts",
+    price: "Min 70% off",
+    image: Images.womanShirts,
+  },
+  {
+    id: 3,
+    name: "Shoes",
+    price: "Upto 70% off",
+    image: Images.shoes,
+  },
+  {
+    id: 4,
+    name: "Ladies Purses",
+    price: "Up to 65% Off",
+    image: Images.womanPurse,
+  },
+  { id: 5, name: "Man Shirts", price: "Min 50% Off", image: Images.manShirts },
+  {
+    id: 6,
+    name: "Man Jeans",
+    price: "Upto 90% off",
+    image: Images.manJeans,
+  },
+];
