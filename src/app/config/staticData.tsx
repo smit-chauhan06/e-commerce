@@ -245,22 +245,22 @@ export const HomeDecorOffersData = {
   items: [
     {
       id: 1,
-      name: "Starting ₹199 | Bedsheets",
+      name: "Bedsheets",
       image: Images.bedSheet,
     },
     {
       id: 2,
-      name: "Starting ₹199 | Curtains",
+      name: "Curtains",
       image: Images.curtains,
     },
     {
       id: 3,
-      name: "Minimum 40% off | Iorning board & more",
+      name: "Iorning board & more",
       image: Images.iornBoard,
     },
     {
       id: 4,
-      name: "Up to 60% off | Home decor",
+      name: "Home decor",
       image: Images.homeDecor,
     },
   ],
