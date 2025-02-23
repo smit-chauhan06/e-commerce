@@ -213,3 +213,55 @@ export const FashionDeals = [
     image: Images.manJeans,
   },
 ];
+
+export const appliancesOffersData = {
+  title: "Appliances for your home | Up to 55% off",
+  items: [
+    {
+      id: 1,
+      name: "Air conditioners",
+      image: Images.ac,
+    },
+    {
+      id: 2,
+      name: "Refridgerators",
+      image: Images.fridge,
+    },
+    {
+      id: 3,
+      name: "Microwaves",
+      image: Images.microWave,
+    },
+    {
+      id: 4,
+      name: "Washing machines",
+      image: Images.washingMachine,
+    },
+  ],
+};
+
+export const HomeDecorOffersData = {
+  title: "Starting ₹199 | Brands & more",
+  items: [
+    {
+      id: 1,
+      name: "Starting ₹199 | Bedsheets",
+      image: Images.bedSheet,
+    },
+    {
+      id: 2,
+      name: "Starting ₹199 | Curtains",
+      image: Images.curtains,
+    },
+    {
+      id: 3,
+      name: "Minimum 40% off | Iorning board & more",
+      image: Images.iornBoard,
+    },
+    {
+      id: 4,
+      name: "Up to 60% off | Home decor",
+      image: Images.homeDecor,
+    },
+  ],
+};

@@ -32,4 +32,12 @@ export const Images = {
   womanShirts: "/Images/womanShirts.png",
   womanPurse: "/Images/womanPurse.png",
   manShirts: "/Images/manShirts.png",
+  ac: "/Images/ac.png",
+  fridge: "/Images/fridge.png",
+  microWave: "/Images/microwave.png",
+  washingMachine: "/Images/WashingMachine.png",
+  bedSheet: "/Images/bedsheet.png",
+  curtains: "/Images/curtains.png",
+  iornBoard: "/Images/iornBoard.png",
+  homeDecor: "/Images/homeDecor.png",
 };

@@ -19,9 +19,9 @@ const CategoryBar = (props: CategoryProps) => {
       {categoryData?.map((data, index) => (
         <div
           key={data?.id}
-          className="flex justify-center items-center pb-[10px]  flex-col min-w-[100px] cursor-pointer"
+          className="flex justify-center items-center pb-[10px]  flex-col min-w-[100px] cursor-pointer group"
         >
-          <div className="w-[100px] h-[70px] transform transition duration-300 hover:scale-110">
+          <div className="w-[100px] h-[70px] transform transition duration-300 group-hover:scale-110">
             <Image
               src={data?.image}
               alt="product"
@@ -31,7 +31,7 @@ const CategoryBar = (props: CategoryProps) => {
             />
           </div>
 
-          <span className="text-blackColor font-raleway font-semiBold text-[16px] sm:text-[18px] mt-[10px] text-center">
+          <span className="text-blackColor font-raleway font-semiBold text-[16px] sm:text-[18px] mt-[10px] text-center group-hover:underline">
             {data?.name}
           </span>
         </div>

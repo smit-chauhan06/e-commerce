@@ -7,9 +7,11 @@ import CHeader from "../components/CHeader/index";
 import CSectionHeader from "../components/CSectionHeader";
 import CTimer from "../components/CTimer";
 import {
+  appliancesOffersData,
   BestElectronics,
   categoryData,
   FashionDeals,
+  HomeDecorOffersData,
   MonthlySellProducts,
   ProductDetails,
 } from "../config/staticData";
@@ -20,6 +22,7 @@ import { setAccessToken } from "../store/authSlice";
 import { Images } from "../config/Files";
 import Image from "next/image";
 import DealCard from "../components/DealCard";
+import OfferContainer from "../components/OfferContainer";
 
 const Home = () => {
   // const dispatch = useAppDispatch();
@@ -99,6 +102,19 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="flex justify-center items-center pt-[10px] mt-[40px]">
+        <div className="content-div grid grid-cols-1 sm:grid-cols-2 gap-[20px] md:gap-[50px]">
+          <OfferContainer
+            title={appliancesOffersData?.title}
+            items={appliancesOffersData?.items}
+          />
+          <OfferContainer
+            title={HomeDecorOffersData?.title}
+            items={HomeDecorOffersData?.items}
+          />
+        </div>
+      </section>
+
       <section className="flex justify-center items-center flex-col pt-[10px]">
         <div className="content-div">
           <CSectionHeader title="Fashion Top Deals" />
