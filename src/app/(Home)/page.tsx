@@ -43,42 +43,25 @@ const Home = () => {
             showArrows={false}
             showStatus={false}
           >
-            <div className="bg-bgGrey flex flex-col sm:flex-row justify-between w-[100%] items-center">
-              <div className="">
-                <img
-                  src={Images.slider1}
-                  alt="product"
-                  className="w-[100%] min-h-[200px] sm:min-h-[400px]"
-                />
+            {[
+              Images.slider1,
+              Images.slider2,
+              Images.slider3,
+              Images.slider4,
+            ].map((image, index) => (
+              <div
+                key={index}
+                className="bg-bgGrey flex justify-center items-center w-[100%]"
+              >
+                <div className="w-[100%] h-[200px] sm:h-[300px] md:h-[500px] flex items-center justify-center bg-gray-200">
+                  <img
+                    src={image}
+                    alt="product"
+                    className="w-[100%] h-full object-fill"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="bg-bgGrey flex flex-col sm:flex-row justify-between w-[100%] items-center">
-              <div className="">
-                <img
-                  src={Images.slider2}
-                  alt="product"
-                  className="w-[100%] min-h-[200px] sm:min-h-[400px]"
-                />
-              </div>
-            </div>
-            <div className="bg-bgGrey flex flex-col sm:flex-row justify-between w-[100%] items-center">
-              <div className="">
-                <img
-                  src={Images.slider3}
-                  alt="product"
-                  className="w-[100%] min-h-[200px] sm:min-h-[400px]"
-                />
-              </div>
-            </div>
-            <div className="bg-bgGrey flex flex-col sm:flex-row justify-between w-[100%] items-center">
-              <div className="">
-                <img
-                  src={Images.slider4}
-                  alt="product"
-                  className="w-[100%] min-h-[200px] sm:min-h-[400px]"
-                />
-              </div>
-            </div>
+            ))}
           </Carousel>
         </div>
       </section>
