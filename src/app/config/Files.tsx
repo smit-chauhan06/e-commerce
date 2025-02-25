@@ -40,4 +40,12 @@ export const Images = {
   curtains: "/Images/curtains.png",
   iornBoard: "/Images/iornBoard.png",
   homeDecor: "/Images/homeDecor.png",
+  bluetoothSpeaker: "/Images/bluetoothSpeaker.png",
+  gamingMouse: "/Images/gamingMouse.png",
+  headPhone: "/Images/headPhone.png",
+  projector: "/Images/projector.png",
+  womenTshirt: "/Images/womenTshirt.png",
+  manTshirt: "/Images/manTshirt.png",
+  footwear: "/Images/footwear.png",
+  ethnicWear: "/Images/ethnicWear.png",
 };

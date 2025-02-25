@@ -53,7 +53,7 @@ const Home = () => {
                 key={index}
                 className="bg-bgGrey flex justify-center items-center w-[100%]"
               >
-                <div className="w-[100%] h-[200px] sm:h-[300px] md:h-[500px] flex items-center justify-center bg-gray-200">
+                <div className="w-[100%] h-[200px] sm:h-[300px] md:h-[400px] flex items-center justify-center bg-gray-200">
                   <img
                     src={image}
                     alt="product"

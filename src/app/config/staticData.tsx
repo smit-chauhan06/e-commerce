@@ -178,6 +178,30 @@ export const BestElectronics = [
     price: "Starting from ₹1000",
     image: Images.monitor,
   },
+  {
+    id: 7,
+    name: "Bluetooth Speaker",
+    price: "Up to 70% off",
+    image: Images.bluetoothSpeaker,
+  },
+  {
+    id: 8,
+    name: "Mouse",
+    price: "Starting from ₹100",
+    image: Images.gamingMouse,
+  },
+  {
+    id: 9,
+    name: "Headphone",
+    price: "Starting from ₹800",
+    image: Images.headPhone,
+  },
+  {
+    id: 10,
+    name: "Projector",
+    price: "Minimum 40% off",
+    image: Images.projector,
+  },
 ];
 
 export const FashionDeals = [
@@ -211,6 +235,30 @@ export const FashionDeals = [
     name: "Man Jeans",
     price: "Upto 90% off",
     image: Images.manJeans,
+  },
+  {
+    id: 7,
+    name: "Women Tshirts",
+    price: "Upto 60% off",
+    image: Images.womenTshirt,
+  },
+  {
+    id: 8,
+    name: "Men Tshirts",
+    price: "Min 20% off",
+    image: Images.manTshirt,
+  },
+  {
+    id: 9,
+    name: "Footwear",
+    price: "Min 25% off",
+    image: Images.footwear,
+  },
+  {
+    id: 10,
+    name: "Ethnic Wear",
+    price: "upto 60% off",
+    image: Images.ethnicWear,
   },
 ];
 
