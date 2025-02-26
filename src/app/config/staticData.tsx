@@ -263,7 +263,7 @@ export const FashionDeals = [
 ];
 
 export const appliancesOffersData = {
-  title: "Appliances for your home | Up to 55% off",
+  title: "Appliances for home | Up to 55% off",
   items: [
     {
       id: 1,
@@ -310,6 +310,32 @@ export const HomeDecorOffersData = {
       id: 4,
       name: "Home decor",
       image: Images.homeDecor,
+    },
+  ],
+};
+
+export const womenStyleOffers = {
+  title: "Up to 60% off | Styles for women",
+  items: [
+    {
+      id: 1,
+      name: "Women's clothing",
+      image: Images.womenClothing,
+    },
+    {
+      id: 2,
+      name: "Footwear Handbags",
+      image: Images.footwearHandbag,
+    },
+    {
+      id: 3,
+      name: "Watches",
+      image: Images.watches,
+    },
+    {
+      id: 4,
+      name: "Fashion jewellery",
+      image: Images.fashionJwellery,
     },
   ],
 };

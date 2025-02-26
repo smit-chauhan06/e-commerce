@@ -14,6 +14,7 @@ import {
   HomeDecorOffersData,
   MonthlySellProducts,
   ProductDetails,
+  womenStyleOffers,
 } from "../config/staticData";
 import { useAppDispatch } from "../store";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -86,7 +87,7 @@ const Home = () => {
         </div>
       </section>
       <section className="flex justify-center items-center pt-[10px] mt-[40px]">
-        <div className="content-div grid grid-cols-1 sm:grid-cols-2 gap-[20px] md:gap-[50px]">
+        <div className="content-div grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] md:gap-[30px]">
           <OfferContainer
             title={appliancesOffersData?.title}
             items={appliancesOffersData?.items}
@@ -94,6 +95,10 @@ const Home = () => {
           <OfferContainer
             title={HomeDecorOffersData?.title}
             items={HomeDecorOffersData?.items}
+          />
+          <OfferContainer
+            title={womenStyleOffers?.title}
+            items={womenStyleOffers?.items}
           />
         </div>
       </section>

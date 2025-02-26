@@ -48,4 +48,8 @@ export const Images = {
   manTshirt: "/Images/manTshirt.png",
   footwear: "/Images/footwear.png",
   ethnicWear: "/Images/ethnicWear.png",
+  womenClothing: "/Images/womenClothing.png",
+  fashionJwellery: "/Images/fashionJwellery.png",
+  watches: "/Images/watches.png",
+  footwearHandbag: "/Images/footwearHandbags.png",
 };
