@@ -24,6 +24,12 @@ import { Images } from "../config/Files";
 import Image from "next/image";
 import DealCard from "../components/DealCard";
 import OfferContainer from "../components/OfferContainer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { FreeMode, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
 
 const Home = () => {
   // const dispatch = useAppDispatch();
@@ -54,7 +60,7 @@ const Home = () => {
                 key={index}
                 className="bg-bgGrey flex justify-center items-center w-[100%]"
               >
-                <div className="w-[100%] h-[200px] sm:h-[300px] md:h-[400px] flex items-center justify-center bg-gray-200">
+                <div className="w-[100%] h-[200px] sm:h-[300px] md:h-[450px] flex items-center justify-center bg-gray-200">
                   <img
                     src={image}
                     alt="product"
@@ -79,9 +85,30 @@ const Home = () => {
         <div className="content-div">
           <div className="overflow-x-auto whitespace-nowrap scrollbar-hide">
             <div className="flex space-x-6">
-              {BestElectronics.map((item, index) => (
-                <DealCard key={item.id} productsData={item} />
-              ))}
+              <Swiper
+                slidesPerView={"auto"}
+                spaceBetween={20}
+                className="overflow-hidden"
+                modules={[FreeMode, Navigation]}
+                freeMode={true}
+                speed={700}
+                navigation={true}
+                slidesPerGroup={3}
+              >
+                {BestElectronics.map((item) => (
+                  <SwiperSlide
+                    key={item.id}
+                    className="flex h-full "
+                    style={{
+                      width: "250px",
+                    }}
+                  >
+                    <div className="w-full flex flex-col h-full">
+                      <DealCard productsData={item} />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </div>
@@ -109,10 +136,29 @@ const Home = () => {
         </div>
         <div className="content-div">
           <div className="overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <div className="flex space-x-6">
-              {FashionDeals.map((item, index) => (
-                <DealCard key={item.id} productsData={item} />
-              ))}
+            <div className="flex space-x-6 relative">
+              <Swiper
+                slidesPerView={"auto"}
+                spaceBetween={20}
+                className="overflow-hidden"
+                modules={[FreeMode, Navigation]}
+                freeMode={true}
+                speed={700}
+                navigation={true}
+                slidesPerGroup={3}
+              >
+                {FashionDeals.map((item, index) => (
+                  <SwiperSlide
+                    key={item.id}
+                    className="flex h-full "
+                    style={{
+                      width: "250px",
+                    }}
+                  >
+                    <DealCard key={item.id} productsData={item} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </div>

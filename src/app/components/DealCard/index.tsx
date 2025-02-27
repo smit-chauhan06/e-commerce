@@ -13,7 +13,7 @@ interface propTypes {
 const DealCard = (props: propTypes) => {
   const { productsData } = props;
   return (
-    <div className="min-w-[170px] max-h-[250px] xs:min-w-[230px] flex flex-col justify-center items-center border rounded-md cursor-pointer hover:shadow-lg group">
+    <div className="min-w-[170px] max-h-[250px] h-full xs:min-w-[230px] flex flex-col justify-center items-center border rounded-md cursor-pointer hover:shadow-lg group">
       <div className="w-[60%] h-[60%] transform transition duration-300 group-hover:scale-110">
         <Image
           src={productsData?.image}
