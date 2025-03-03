@@ -30,6 +30,7 @@ import { FreeMode, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
+import { isMobile, isTablet } from "react-device-detect";
 
 const Home = () => {
   // const dispatch = useAppDispatch();
@@ -92,7 +93,7 @@ const Home = () => {
                 modules={[FreeMode, Navigation]}
                 freeMode={true}
                 speed={700}
-                navigation={true}
+                navigation={!(isTablet || isMobile) && true}
                 slidesPerGroup={3}
               >
                 {BestElectronics.map((item) => (
@@ -144,7 +145,7 @@ const Home = () => {
                 modules={[FreeMode, Navigation]}
                 freeMode={true}
                 speed={700}
-                navigation={true}
+                navigation={!(isTablet || isMobile) && true}
                 slidesPerGroup={3}
               >
                 {FashionDeals.map((item, index) => (
