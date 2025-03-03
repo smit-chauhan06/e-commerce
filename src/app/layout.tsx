@@ -3,6 +3,7 @@ import "./globals.css";
 import ReduxProvider from "./store/reduxProvider";
 import localFont from "next/font/local";
 import CHeader from "./components/CHeader";
+import CFooter from "./components/CFooter";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -65,6 +66,7 @@ export default function RootLayout({
         <ReduxProvider>
           <CHeader />
           <main>{children}</main>
+          <CFooter />
         </ReduxProvider>
       </body>
     </html>

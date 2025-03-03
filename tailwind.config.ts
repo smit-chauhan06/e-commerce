@@ -15,7 +15,8 @@ export default {
         cardPriceColor:'#DB4444',
         greyText:"#7D8184",
         bgGrey:"#F3F4F6",
-        sliderbg:"#F8D6A4"
+        sliderbg:"#F8D6A4",
+        greyBg:"#2F2E30"
       },
       fontFamily: {
         raleway : ["var(--font-raleway)"]
