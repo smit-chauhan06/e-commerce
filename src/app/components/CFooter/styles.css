@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link-style {
+  @apply mt-[5px] text-[14px] xs:text-[16px];
+}
+
+.link-header {
+  @apply font-medium text-[18px] xs:text-[20px];
+}

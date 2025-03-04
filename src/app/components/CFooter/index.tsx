@@ -4,71 +4,66 @@ import { FaFacebookF } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
+import "./styles.css";
 
 const CFooter = () => {
   return (
     <section className="bg-black w-[100%] flex flex-col justify-center items-center pt-[20px] pb-[20px]">
       <div className="content-div text-whiteColor grid grid-cols-2 xl:grid-cols-4 gap-10 sm:gap-4">
         <div className="flex flex-col  flex-1">
-          <span className="font-medium text-[18px] xs:text-[20px]">
-            Support
-          </span>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <span className="link-header">Support</span>
+          <div className="link-style">
             <p>367, Aradhana Street, Bhavanipura</p>
             <p>Petlad, Anand, Gujarat, India</p>
           </div>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <div className="link-style">
             <p>shop@gmail.com</p>
           </div>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <div className="link-style">
             <p>+91 9876543210</p>
           </div>
         </div>
         <div className="flex flex-col  flex-1">
-          <span className="font-medium text-[18px] xs:text-[20px]">
-            Account
-          </span>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <span className="link-header">Account</span>
+          <div className="link-style">
             <a href="#" className="hover:underline">
               My Account
             </a>
           </div>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <div className="link-style">
             <a href="#" className="hover:underline">
               Login / Register
             </a>
           </div>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <div className="link-style">
             <a href="#" className="hover:underline">
               Cart
             </a>
           </div>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <div className="link-style">
             <a href="#" className="hover:underline">
               Whistlist
             </a>
           </div>
         </div>
         <div className="flex flex-col  flex-1">
-          <span className="font-medium text-[18px] xs:text-[20px]">
-            Quick Links
-          </span>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <span className="link-header">Quick Links</span>
+          <div className="link-style">
             <a href="#" className="hover:underline">
               Privacy Policy
             </a>
           </div>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <div className="link-style">
             <a href="#" className="hover:underline">
               Terms of use
             </a>
           </div>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <div className="link-style">
             <a href="#" className="hover:underline">
               FAQ
             </a>
           </div>
-          <div className="mt-[5px] text-[14px] xs:text-[16px]">
+          <div className="link-style">
             <a href="#" className="hover:underline">
               Contact Us
             </a>
