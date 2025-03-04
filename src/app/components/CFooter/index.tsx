@@ -9,7 +9,7 @@ import "./styles.css";
 const CFooter = () => {
   return (
     <section className="bg-black w-[100%] flex flex-col justify-center items-center pt-[20px] pb-[20px]">
-      <div className="content-div text-whiteColor grid grid-cols-2 xl:grid-cols-4 gap-8 sm:gap-4">
+      <div className="content-div text-whiteColor grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-4">
         <div className="flex flex-col  flex-1">
           <span className="link-header">Support</span>
           <div className="link-style">
@@ -120,24 +120,24 @@ const CFooter = () => {
           {Setting.copyRightText}
         </span>
         <div className="grid grid-cols-4 gap-4 mt-[10px] sm:mt-0">
-          <a href="#">
-            <div className="border p-[10px] rounded-md">
-              <FaFacebookF className="text-whiteColor" />
+          <a href="#" className="group">
+            <div className="border p-[10px] rounded-md group-hover:bg-whiteColor">
+              <FaFacebookF className="text-whiteColor group-hover:text-blackColor" />
             </div>
           </a>
-          <a href="#">
-            <div className="border p-[10px] rounded-md">
-              <BsInstagram className="text-whiteColor" />
+          <a href="#" className="group">
+            <div className="border p-[10px] rounded-md group-hover:bg-whiteColor">
+              <BsInstagram className="text-whiteColor group-hover:text-blackColor" />
             </div>
           </a>
-          <a href="#">
-            <div className="border p-[10px] rounded-md">
-              <RiTwitterXFill className="text-whiteColor" />
+          <a href="#" className="group">
+            <div className="border p-[10px] rounded-md group-hover:bg-whiteColor">
+              <RiTwitterXFill className="text-whiteColor group-hover:text-blackColor" />
             </div>
           </a>
-          <a href="#">
-            <div className="border p-[10px] rounded-md">
-              <FaLinkedinIn className="text-whiteColor" />
+          <a href="#" className="group">
+            <div className="border p-[10px] rounded-md group-hover:bg-whiteColor">
+              <FaLinkedinIn className="text-whiteColor group-hover:text-blackColor" />
             </div>
           </a>
         </div>
