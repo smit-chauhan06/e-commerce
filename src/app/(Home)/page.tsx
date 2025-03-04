@@ -135,7 +135,7 @@ const Home = () => {
         <div className="content-div">
           <CSectionHeader title="Fashion Top Deals" />
         </div>
-        <div className="content-div">
+        <div className="content-div mb-[30px]">
           <div className="overflow-x-auto whitespace-nowrap scrollbar-hide">
             <div className="flex space-x-6 relative">
               <Swiper
