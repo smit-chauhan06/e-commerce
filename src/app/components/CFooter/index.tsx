@@ -9,7 +9,7 @@ import "./styles.css";
 const CFooter = () => {
   return (
     <section className="bg-black w-[100%] flex flex-col justify-center items-center pt-[20px] pb-[20px]">
-      <div className="content-div text-whiteColor grid grid-cols-2 xl:grid-cols-4 gap-10 sm:gap-4">
+      <div className="content-div text-whiteColor grid grid-cols-2 xl:grid-cols-4 gap-8 sm:gap-4">
         <div className="flex flex-col  flex-1">
           <span className="link-header">Support</span>
           <div className="link-style">
