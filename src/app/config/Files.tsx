@@ -52,4 +52,5 @@ export const Images = {
   fashionJwellery: "/Images/fashionJwellery.png",
   watches: "/Images/watches.png",
   footwearHandbag: "/Images/footwearHandbags.png",
+  appliances: "/Images/appliances.png",
 };

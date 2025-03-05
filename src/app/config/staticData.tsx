@@ -148,6 +148,11 @@ export const categoryData = [
     name: "Toys & More",
     image: Images.babyCategory,
   },
+  {
+    id: 7,
+    name: "Appliances",
+    image: Images.appliances,
+  },
 ];
 
 export const BestElectronics = [
@@ -156,6 +161,7 @@ export const BestElectronics = [
     name: "Smart Watches",
     price: "From ₹500",
     image: Images.smartWatch,
+    discount: "35%",
   },
   { id: 2, name: "Printers", price: "Up to 40% Off", image: Images.printer },
 
