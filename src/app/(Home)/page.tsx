@@ -31,6 +31,25 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { isMobile, isTablet } from "react-device-detect";
+import { TbTruckDelivery } from "react-icons/tb";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { SiSecurityscorecard } from "react-icons/si";
+
+const FeatureCard = ({ icon, title, description, className = "" }) => {
+  return (
+    <div className={`flex flex-col items-center text-center p-4 ${className}`}>
+      <div className="bg-greyBg rounded-full p-2 mb-3 md:p-3 md:mb-4">
+        <div className="bg-blackColor rounded-full p-2 w-14 h-14 flex items-center justify-center">
+          {icon}
+        </div>
+      </div>
+      <h3 className="text-[16px] font-bold text-blackColor mb-1 md:mb-2">
+        {title}
+      </h3>
+      <p className="text-[14px] md:text-base text-gray">{description}</p>
+    </div>
+  );
+};
 
 const Home = () => {
   // const dispatch = useAppDispatch();
@@ -161,6 +180,35 @@ const Home = () => {
                 ))}
               </Swiper>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex justify-center items-center flex-col pt-[10px] mb-[30px]">
+        <div className="content-div">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-0">
+            <FeatureCard
+              title="FREE AND FAST DELIVERY"
+              description="Free delivery for all orders over 500"
+              icon={<TbTruckDelivery className="text-whiteColor text-[30px]" />}
+            />
+
+            <FeatureCard
+              title="24/7 CUSTOMER SERVICE"
+              description="Friendly 24/7 customer support"
+              icon={
+                <RiCustomerService2Fill className="text-whiteColor text-[30px]" />
+              }
+            />
+
+            <FeatureCard
+              title="MONEY BACK GUARANTEE"
+              description="We reurn money within 10 days"
+              className="sm:col-span-2 md:col-span-1"
+              icon={
+                <SiSecurityscorecard className="text-whiteColor text-[30px]" />
+              }
+            />
           </div>
         </div>
       </section>

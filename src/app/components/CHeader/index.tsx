@@ -2,9 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { GrFavorite } from "react-icons/gr";
 import { GrCart } from "react-icons/gr";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoMdClose } from "react-icons/io"; // Close icon for drawer
-import { DrawerItems } from "../../config/staticData";
 import { FaRegUserCircle } from "react-icons/fa";
 import "./style.css";
 
